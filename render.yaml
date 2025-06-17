@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: learning-coach-ai
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: streamlit run learning_coach_mvp.py --server.port $PORT --server.address 0.0.0.0
